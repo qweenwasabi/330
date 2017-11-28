@@ -4,7 +4,7 @@
   "description": "project 330",
   "main": "server.js",
   "scripts": {
-    "start": "node src/server.sj",
+    "start": "nodemon src/server.js",
     "test": "mocha database_test.js",
     "db:start": "createdb roam",
     "db:drop": "dropdb roam",
@@ -22,25 +22,23 @@
   "author": "Jacky B",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/qweenwasabi/330/issues",
-    "license": "MIT",
-    "dependencies": {
-      "bcrypt": "^1.0.3",
-      "body-parser": "^1.17.2",
-      "connect-pg-simple": "^4.2.1",
-      "ejs": "^2.5.6",
-      "express": "^4.15.3",
-      "express-session": "^1.15.6",
-      "lint": "^1.1.2",
-      "moment": "^2.18.1",
-      "pg-promise": "^6.5.1"
-    },
-    "devDependencies": {
-      "eslint": "^4.9.0",
-      "eslint-config-airbnb-base": "^11.3.1",
-      "eslint-plugin-import": "^2.7.0",
-      "nodemon": "^1.11.0"
-    }
+    "url": "https://github.com/qweenwasabi/330/issues"
   },
-  "homepage": "https://github.com/qweenwasabi/330#readme"
+  "homepage": "https://github.com/qweenwasabi/330#readme",
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "connect-pg-simple": "^4.2.1",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "lint": "^1.1.2",
+    "moment": "^2.19.2",
+    "pg-promise": "^7.3.2"
+  },
+  "devDependencies": {
+    "eslint": "^4.12.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "nodemon": "^1.12.1"
+  }
 }
