@@ -1,0 +1,46 @@
+{
+  "name": "330",
+  "version": "1.0.0",
+  "description": "project 330",
+  "main": "server.js",
+  "scripts": {
+    "start": "node src/server.sj",
+    "test": "mocha database_test.js",
+    "db:start": "createdb roam",
+    "db:drop": "dropdb roam",
+    "db:schema": "psql -d roam < src/models/db/schema.sql",
+    "db:init": "npm run db:start && npm run db:schema",
+    "db:restart": "npm run db:drop && npm run db:start && npm run db:schema"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qweenwasabi/330.git"
+  },
+  "keywords": [
+    "330"
+  ],
+  "author": "Jacky B",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/qweenwasabi/330/issues",
+    "license": "MIT",
+    "dependencies": {
+      "bcrypt": "^1.0.3",
+      "body-parser": "^1.17.2",
+      "connect-pg-simple": "^4.2.1",
+      "ejs": "^2.5.6",
+      "express": "^4.15.3",
+      "express-session": "^1.15.6",
+      "lint": "^1.1.2",
+      "moment": "^2.18.1",
+      "pg-promise": "^6.5.1"
+    },
+    "devDependencies": {
+      "eslint": "^4.9.0",
+      "eslint-config-airbnb-base": "^11.3.1",
+      "eslint-plugin-import": "^2.7.0",
+      "nodemon": "^1.11.0"
+    }
+  },
+  "homepage": "https://github.com/qweenwasabi/330#readme"
+}
